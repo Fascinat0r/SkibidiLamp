@@ -4,7 +4,7 @@ import math
 
 def main():
    ADDR = 10
-   bus = SMBus(1)
+   bus = SMBus(0)
    while True:
       bus.write_i2c_block_data(10, 0, [0, 0, 0xAA])# зааттачить
       time.sleep(1)
